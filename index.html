@@ -135,6 +135,13 @@
     <p>Designed with ❤️ for safe harvests in Kenya.</p>
   </div>
 </footer>
+<script>
+  const menuIcon = document.getElementById('menu-icon');
+  const navbar = document.querySelector('.navbar');
 
+  menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+  });
+</script>
 </body>
 </html>

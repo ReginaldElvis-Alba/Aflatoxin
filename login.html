@@ -3,42 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Login - AFLA-DRY 360</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" />
 </head>
 <body>
-    <!-- LOGIN FORM -->
-    <div class="form">
-        
-        <h2>Login Here</h2>
-        <form>
-          <label for="username">Username:</label><br>
-          <input type="text" id="username" name="username" placeholder="Enter name here" required><br><br>
-  
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" placeholder="Enter email here" required><br><br>
-  
-          <label for="password">Password:</label><br>
-          <input type="password" id="password" name="password" placeholder="Enter password here" required><br><br>
-  
-          <button type="submit" class="sign">Login</button>
-        </form>
-  
-        <p>Don't have an account?</p>
-        <a href="#" class="signup-btn">Sign Up</a>
-  
-        <p>Log in With</p>
-        <div class="social-icons">
-          <a href="#" class="circle-icon facebook"><i class="ri-facebook-fill"></i></a>
-          <a href="#" class="circle-icon google"><i class="ri-google-fill"></i></a>
-          <a href="#" class="circle-icon instagram"><i class="ri-instagram-line"></i></a>
-          <a href="#" class="circle-icon twitter"><i class="ri-twitter-fill"></i></a>
+    <!-- HEADER -->
+    <header>
+        <a href="index.html" class="logo"><i class="ri-home-heart-line"></i> AFLA-DRY 360</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#how-it-works">How it works</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="background">
+            <img src="Screenshot 2025-07-15 221615.png" alt="Logo Icon" />
         </div>
-      </div>
-      <div class="farmer-first">
-        <img src="farmer..png" alt="Picture of a farmer">
+    </header>
+
+    <!-- LOGIN SECTION -->
+    <div class="login-container">
+        <div class="login-content">
+            <div class="form">
+                <h2>Login Here</h2>
+                <form>
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username" placeholder="Enter name here" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter email here" required><br><br>
+
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" placeholder="Enter password here" required><br><br>
+
+                    <button type="submit" class="sign">Login</button>
+                </form>
+
+                <p>Don't have an account?</p>
+                <a href="#" class="signup-btn">Sign Up</a>
+
+                <p>Log in With</p>
+                <div class="social-icons">
+                    <a href="#" class="circle-icon facebook"><i class="ri-facebook-fill"></i></a>
+                    <a href="#" class="circle-icon google"><i class="ri-google-fill"></i></a>
+                    <a href="#" class="circle-icon instagram"><i class="ri-instagram-line"></i></a>
+                    <a href="#" class="circle-icon twitter"><i class="ri-twitter-fill"></i></a>
+                </div>
+            </div>
+            <div class="farmer-first">
+                <img src="farmer..png" alt="Picture of a farmer">
+            </div>
+        </div>
     </div>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.querySelector('.navbar');
+
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

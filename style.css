@@ -584,11 +584,32 @@ section {
     header {
         padding: 15px 30px;
     }
+    .intro {
+        text-align: left; 
+        display: block;    
+        padding-left: 20px;       
+      }
+    
+      .intro h1,.intro p,.intro a {
+        text-align: left;        
+        display: block;           
+        margin-left: 0;          
+      
+    }
+    .intro a.btn {
+        display: inline-block;  
+        width: auto;           
+        padding: 10px 20px;     
+        max-width: fit-content; 
+        margin-left: 20px;   
+        text-align: left;     
+        margin-right: auto   
+      }
     .logo {
         font-size: 1.6rem;
     }
     .navbar {
-        display: none;
+        display: flex-start;
         position: absolute;
         top: 100%;
         left: 0;
@@ -605,7 +626,18 @@ section {
     .navbar a {
         padding: 1rem 2rem;
         border-bottom: 1px solid #eee;
+        display: block;
+        padding: 0.6rem 1rem;       
+        margin: 0.2rem 0;            
+        background: transparent;    
+        border: 1px solid transparent; 
+        border-radius: 5px;
+        width: auto;         
     }
+    .navbar a:hover {
+        background: rgba(0, 123, 255, 0.15); 
+        border-color: #007bff;               
+      }
     #menu-icon {
         display: block;
     }

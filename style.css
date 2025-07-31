@@ -609,7 +609,7 @@ section {
         font-size: 1.6rem;
     }
     .navbar {
-        display: flex-start;
+        display: none;
         position: absolute;
         top: 100%;
         left: 0;
@@ -637,6 +637,11 @@ section {
     .navbar a:hover {
         background: rgba(0, 123, 255, 0.15); 
         border-color: #007bff;               
+      }
+    
+    .navbar a.home-active {
+        padding: 1rem 2rem;             
+        margin: 0;                     
       }
     #menu-icon {
         display: block;
